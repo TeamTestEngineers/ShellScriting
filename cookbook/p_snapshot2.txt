@@ -1,0 +1,170 @@
+    PID COMMAND
+      1 /sbin/init splash
+      2 [kthreadd]
+      3 [rcu_gp]
+      4 [rcu_par_gp]
+      6 [kworker/0:0H-events_highpri]
+      8 [mm_percpu_wq]
+      9 [rcu_tasks_rude_]
+     10 [rcu_tasks_trace]
+     11 [ksoftirqd/0]
+     12 [rcu_sched]
+     13 [migration/0]
+     15 [cpuhp/0]
+     16 [cpuhp/1]
+     17 [migration/1]
+     18 [ksoftirqd/1]
+     20 [kworker/1:0H-events_highpri]
+     23 [kdevtmpfs]
+     24 [netns]
+     25 [inet_frag_wq]
+     26 [kauditd]
+     27 [khungtaskd]
+     28 [oom_reaper]
+     29 [writeback]
+     30 [kcompactd0]
+     31 [ksmd]
+     32 [khugepaged]
+     52 [kintegrityd]
+     53 [kblockd]
+     54 [blkcg_punt_bio]
+     55 [tpm_dev_wq]
+     56 [edac-poller]
+     57 [devfreq_wq]
+     58 [kworker/0:1H-kblockd]
+     59 [kswapd0]
+     61 [kthrotld]
+     62 [acpi_thermal_pm]
+     63 [mld]
+     64 [ipv6_addrconf]
+     74 [kstrp]
+     77 [zswap-shrink]
+     78 [kworker/u5:0]
+    118 [kworker/1:1H-kblockd]
+    120 [ata_sff]
+    123 [scsi_eh_0]
+    125 [scsi_tmf_0]
+    128 [scsi_eh_1]
+    132 [scsi_tmf_1]
+    180 [jbd2/sda1-8]
+    181 [ext4-rsv-conver]
+    237 /lib/systemd/systemd-journald
+    241 [rpciod]
+    242 [xprtiod]
+    264 /lib/systemd/systemd-udevd
+    351 /usr/sbin/haveged --Foreground --verbose=1
+    382 /usr/sbin/cron -f
+    383 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    384 /usr/sbin/NetworkManager --no-daemon
+    387 /usr/libexec/polkitd --no-debug
+    388 /usr/sbin/rsyslogd -n -iNONE
+    389 /lib/systemd/systemd-logind
+    449 /usr/sbin/ModemManager
+    465 /usr/sbin/lightdm
+    479 /usr/sbin/VBoxService
+    507 /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+    508 /sbin/agetty -o -p -- \u --noclear tty1 linux
+    550 /usr/sbin/dockerd -H fd://
+    610 containerd --config /var/run/docker/containerd/containerd.toml --log-level info
+    645 /usr/libexec/rtkit-daemon
+    882 lightdm --session-child 14 23
+    887 /lib/systemd/systemd --user
+    888 (sd-pam)
+    902 /usr/bin/pipewire
+    903 /usr/bin/pipewire-media-session
+    904 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+    905 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    908 /usr/bin/gnome-keyring-daemon --daemonize --login
+    912 xfce4-session
+    963 /usr/bin/VBoxClient --clipboard
+    965 /usr/bin/VBoxClient --clipboard
+    973 /usr/bin/VBoxClient --seamless
+    976 /usr/bin/VBoxClient --seamless
+    983 /usr/bin/VBoxClient --draganddrop
+    984 /usr/bin/VBoxClient --draganddrop
+    987 /usr/bin/VBoxClient --vmsvga
+    988 /usr/bin/VBoxClient --vmsvga
+    993 /usr/bin/ssh-agent x-session-manager
+   1008 /usr/libexec/at-spi-bus-launcher
+   1014 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+   1018 /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+   1023 /usr/libexec/at-spi2-registryd --use-gnome-session
+   1034 /usr/bin/gpg-agent --supervised
+   1036 xfwm4 --display :0.0 --sm-client-id 29bfce7a3-8592-420b-9f14-013cb582caff
+   1039 /usr/libexec/gvfsd
+   1044 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   1060 xfsettingsd --display :0.0 --sm-client-id 2f98b8453-984e-4ac3-afc0-6ddc5d797a9f
+   1063 /usr/libexec/upowerd
+   1068 xfce4-panel --display :0.0 --sm-client-id 26d1fa71c-9f82-40ef-85c8-8d08b8260c73
+   1072 Thunar --sm-client-id 2ac252122-76d3-421f-aa3c-a8f5dc69e4c6 --daemon
+   1077 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libwhiskermenu.so 1 27262983 whiskermenu Whisker Menu Show a menu to easily access installed applications
+   1078 xfdesktop --display :0.0 --sm-client-id 25bbfcc75-56f1-4ecb-a6bb-f7b984e347eb
+   1083 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libcpugraph.so 13 27262984 cpugraph CPU Graph Graphical representation of the CPU load
+   1084 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystray.so 14 27262985 systray Status Tray Plugin Provides status notifier items (application indicators) and legacy systray items
+   1085 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libgenmon.so 15 27262986 genmon Generic Monitor Show output of a command.
+   1086 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libpulseaudio-plugin.so 16 27262987 pulseaudio PulseAudio Plugin Adjust the audio volume of the PulseAudio sound system
+   1087 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libnotification-plugin.so 17 27262988 notification-plugin Notification Plugin Notification plugin for the Xfce panel
+   1088 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxfce4powermanager.so 18 27262989 power-manager-plugin Power Manager Plugin Display the battery levels of your devices and control the brightness of your display
+   1093 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libactions.so 22 27262990 actions Action Buttons Log out, lock or other system actions
+   1132 /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+   1144 xfce4-power-manager --restart --sm-client-id 22f9e7de3-3878-4707-bbc3-a5b94f8d660d
+   1156 nm-applet
+   1157 /usr/bin/python3 /usr/bin/blueman-applet
+   1158 xcape -e Super_L Control_L Escape
+   1162 light-locker
+   1164 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+   1176 /usr/libexec/geoclue-2.0/demos/agent
+   1183 xiccd
+   1199 /usr/libexec/colord
+   1200 /usr/libexec/dconf-service
+   1248 /usr/libexec/gvfs-udisks2-volume-monitor
+   1251 /usr/libexec/udisks2/udisksd
+   1274 /usr/libexec/gvfs-gphoto2-volume-monitor
+   1278 /usr/libexec/gvfs-goa-volume-monitor
+   1286 /usr/libexec/gvfs-afc-volume-monitor
+   1291 /usr/libexec/gvfs-mtp-volume-monitor
+   1300 /usr/libexec/gvfsd-trash --spawner :1.15 /org/gtk/gvfs/exec_spaw/0
+   1306 /usr/libexec/gvfsd-metadata
+   1316 /usr/libexec/bluetooth/obexd
+   1383 /usr/share/code/code --unity-launch
+   1390 /usr/share/code/code --type=zygote --no-zygote-sandbox
+   1391 /usr/share/code/code --type=zygote
+   1397 /usr/share/code/code --type=zygote
+   1433 /usr/share/code/code --type=gpu-process --field-trial-handle=10228644014296614160,16745970133642036488,131072 --disable-features=CookiesWithoutSameSiteMustBeSecure,SameSiteByDefaultCookies,SpareRendererForSitePerProcess --disable-color-correct-rendering --enable-crash-reporter=9852b52a-3019-4f3d-a985-14ae3efb03d8,no_channel --global-crash-keys=9852b52a-3019-4f3d-a985-14ae3efb03d8,no_channel,_companyName=Microsoft,_productName=VSCode,_version=1.63.2 --user-data-dir=/home/kali/.config/Code --gpu-preferences=UAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAABgAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA= --shared-files
+   1441 /usr/share/code/code --type=broker
+   1449 /usr/share/code/code --type=utility --utility-sub-type=network.mojom.NetworkService --field-trial-handle=10228644014296614160,16745970133642036488,131072 --disable-features=CookiesWithoutSameSiteMustBeSecure,SameSiteByDefaultCookies,SpareRendererForSitePerProcess --lang=en-GB --service-sandbox-type=none --enable-crash-reporter=9852b52a-3019-4f3d-a985-14ae3efb03d8,no_channel --global-crash-keys=9852b52a-3019-4f3d-a985-14ae3efb03d8,no_channel,_companyName=Microsoft,_productName=VSCode,_version=1.63.2 --user-data-dir=/home/kali/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --shared-files=v8_context_snapshot_data:100
+   1476 /usr/share/code/code --type=renderer --disable-color-correct-rendering --field-trial-handle=10228644014296614160,16745970133642036488,131072 --disable-features=CookiesWithoutSameSiteMustBeSecure,SameSiteByDefaultCookies,SpareRendererForSitePerProcess --lang=en-GB --enable-crash-reporter=9852b52a-3019-4f3d-a985-14ae3efb03d8,no_channel --global-crash-keys=9852b52a-3019-4f3d-a985-14ae3efb03d8,no_channel,_companyName=Microsoft,_productName=VSCode,_version=1.63.2 --user-data-dir=/home/kali/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --app-path=/usr/share/code/resources/app --no-sandbox --no-zygote --num-raster-threads=1 --renderer-client-id=5 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100 --vscode-window-config=vscode:56cd8def-6862-448d-98e0-eee34169e1b0
+   1490 /usr/share/code/code --type=renderer --disable-color-correct-rendering --field-trial-handle=10228644014296614160,16745970133642036488,131072 --disable-features=CookiesWithoutSameSiteMustBeSecure,SameSiteByDefaultCookies,SpareRendererForSitePerProcess --lang=en-GB --enable-crash-reporter=9852b52a-3019-4f3d-a985-14ae3efb03d8,no_channel --global-crash-keys=9852b52a-3019-4f3d-a985-14ae3efb03d8,no_channel,_companyName=Microsoft,_productName=VSCode,_version=1.63.2 --user-data-dir=/home/kali/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --app-path=/usr/share/code/resources/app --no-sandbox --no-zygote --num-raster-threads=1 --renderer-client-id=7 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100 --vscode-window-config=vscode:9ebca68b-e5d0-4097-a9dc-7629b3682a76
+   1600 /usr/share/code/code --type=renderer --disable-color-correct-rendering --field-trial-handle=10228644014296614160,16745970133642036488,131072 --disable-features=CookiesWithoutSameSiteMustBeSecure,SameSiteByDefaultCookies,SpareRendererForSitePerProcess --disable-gpu-compositing --lang=en-GB --enable-crash-reporter=9852b52a-3019-4f3d-a985-14ae3efb03d8,no_channel --global-crash-keys=9852b52a-3019-4f3d-a985-14ae3efb03d8,no_channel,_companyName=Microsoft,_productName=VSCode,_version=1.63.2 --user-data-dir=/home/kali/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --app-path=/usr/share/code/resources/app --no-sandbox --no-zygote --node-integration-in-worker --num-raster-threads=1 --renderer-client-id=9 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100 --vscode-window-config=vscode:85fdbb89-43f5-44a4-a125-d762ad2d9559 --vscode-window-kind=shared-process
+   1640 /usr/share/code/code --ms-enable-electron-run-as-node --inspect-port=0 /usr/share/code/resources/app/out/bootstrap-fork --type=extensionHost --skipWorkspaceStorageLock
+   1676 /usr/share/code/code --ms-enable-electron-run-as-node --inspect-port=0 /usr/share/code/resources/app/out/bootstrap-fork --type=extensionHost --skipWorkspaceStorageLock
+   1693 /usr/share/code/code --ms-enable-electron-run-as-node /usr/share/code/resources/app/out/bootstrap-fork --type=ptyHost
+   1839 /usr/share/code/code --ms-enable-electron-run-as-node /usr/share/code/resources/app/out/bootstrap-fork --type=watcherServiceParcelSharedProcess
+   1840 /usr/share/code/code --ms-enable-electron-run-as-node /usr/share/code/resources/app/out/bootstrap-fork --type=watcherServiceParcelSharedProcess
+   1960 /usr/bin/zsh
+   1971 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+   2161 /usr/share/code/code --ms-enable-electron-run-as-node /home/kali/.vscode/extensions/ms-python.vscode-pylance-2022.3.3/dist/server.bundle.js --cancellationReceive=file:8ead65ee0d15b053f2d9747993c7ab6a5a6e51cd5a --node-ipc --clientProcessId=1640
+ 138864 /usr/bin/bash
+ 403130 /usr/lib/firefox-esr/firefox-esr
+ 403279 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 2 -isForBrowser -prefsLen 4658 -prefMapSize 240017 -jsInit 285716 -parentBuildID 20220105212146 -appdir /usr/lib/firefox-esr/browser 403130 true tab
+ 403345 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 3 -isForBrowser -prefsLen 4658 -prefMapSize 240017 -jsInit 285716 -parentBuildID 20220105212146 -appdir /usr/lib/firefox-esr/browser 403130 true tab
+ 403492 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 4 -isForBrowser -prefsLen 4729 -prefMapSize 240017 -jsInit 285716 -parentBuildID 20220105212146 -appdir /usr/lib/firefox-esr/browser 403130 true tab
+ 403697 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 5 -isForBrowser -prefsLen 7047 -prefMapSize 240017 -jsInit 285716 -parentBuildID 20220105212146 -appdir /usr/lib/firefox-esr/browser 403130 true tab
+ 405384 /usr/lib/firefox-esr/firefox-esr -contentproc -parentBuildID 20220105212146 -prefsLen 8430 -prefMapSize 240017 -appdir /usr/lib/firefox-esr/browser 403130 true rdd
+ 422536 /usr/bin/qterminal
+ 422549 /usr/bin/zsh
+ 425075 /bin/bash ./read1.sh
+ 425099 bash
+ 556093 [kworker/1:0-events]
+ 585412 [kworker/1:2-events]
+ 589372 [kworker/u4:0-ext4-rsv-conversion]
+ 591804 [kworker/u4:3-events_unbound]
+ 592414 [kworker/0:2-events]
+ 593300 [kworker/u4:1-flush-8:0]
+ 593328 [kworker/0:3-mm_percpu_wq]
+ 595386 tail -f /dev/null
+ 595419 [kworker/0:0-events_power_efficient]
+ 595789 tail -f /dev/null
+ 596163 /bin/bash ./redirection.sh
+ 596170 tail -f /dev/null
+ 596171 ps -A -o pid -o command
