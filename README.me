@@ -1,0 +1,13 @@
+sh hello.sh ----> normal execution mode
+sh -x hello.sh ------> execute in debug mode.
+
+if you want to run the debug mode for specific line
+mention "set -x" "set +x" in the shell sript as shown in below figure.
+
+echo "hello world"
+set-x
+ #only these line will be executed in the debug mode
+echo "bla bla bla"
+echo "mala mala" 
+set+x
+echo 
